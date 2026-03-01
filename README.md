@@ -48,30 +48,124 @@ Card dibuat menggunakan komponen Bootstrap dan disusun responsif menggunakan Gri
 
 ---
 
-## Penjelasan Code
+# Penjelasan Code Setiap Section / Fitur
 
-### Struktur HTML
-- Menggunakan struktur dasar HTML (html, head, body)
-- Menggunakan semantic section untuk setiap bagian
-- Navbar menggunakan komponen Bootstrap
+### 1. Navbar
 
-### Styling CSS
-- Menggunakan file eksternal style.css
-- Mengatur warna, background, font, spacing
-- Mengatur rasio gambar sertifikat menggunakan aspect-ratio 16:9
-- Custom styling untuk progress bar dan card
+Navbar dibuat menggunakan komponen bawaan Bootstrap 5 untuk mendukung tampilan responsif.
 
-### Responsive Design
-Menggunakan:
-- Bootstrap Grid System (container, row, col-md-4)
-- Breakpoints bawaan Bootstrap
-- Media query tambahan pada CSS
+```bash
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificates">Certificates</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+```
+Penjelasan:
+navbar-expand-lg → Navbar akan berubah menjadi hamburger menu pada layar kecil.
+fixed-top → Navbar tetap berada di bagian atas saat halaman di-scroll.
+data-bs-toggle="collapse" → Mengaktifkan fitur collapse Bootstrap.
+data-bs-target="#navbarNav" → Menghubungkan tombol toggle dengan menu navigasi.
+
+
+### 2. Home Section (Hero Section)
+
+Home section digunakan sebagai tampilan awal website dan berisi perkenalan singkat.
+```bash
+<section id="home" class="vh-100 d-flex align-items-center">
+    <div class="container text-center">
+        <img src="" alt="Foto Profil" class="profile-img">
+        <h1>Ghifari Al Azhar</h1>
+        <p>Mahasiswa Sistem Informasi yang memiliki minat dalam dunia film dan game.</p>
+    </div>
+</section>
+```
+Penjelasan:
+vh-100 → Tinggi section mengikuti 100% tinggi layar.
+d-flex align-items-center → Menggunakan Flexbox untuk menengahkan konten secara vertikal.
+profile-img → Class CSS untuk mengatur ukuran, border, dan shadow foto profil.
+
+### 3. About Me Section
+Section ini menggunakan Grid System Bootstrap untuk membagi konten menjadi dua kolom.
+```bash
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Deskripsi</h5>
+                <p>Penjelasan tentang diri.</p>
+
+                <h5>Pengalaman</h5>
+                <ul>
+                    <li>Project Website</li>
+                    <li>Project Database</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Skills</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+```
+row → Baris grid Bootstrap.
+col-md-6 → Membagi menjadi dua kolom pada layar medium ke atas.
+progress → Komponen progress bar Bootstrap.
+style="width: 85%" → Menentukan persentase skill.
+
+### 4. Certificates Section
+Bagian ini menggunakan komponen Card dan Grid System Bootstrap
+```bash
+<section id="certificates">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="" alt="Sertifikat" class="certificate-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificate 1</h5>
+                        <p class="card-text">Deskripsi singkat sertifikat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+```
+col-md-4 → Menampilkan 3 card dalam satu baris pada layar medium ke atas.
+card → Komponen Bootstrap untuk menampilkan konten dalam bentuk kotak.
 
 ---
 
 ## Teknologi yang Digunakan
-
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="30" height="30" />
 - HTML5
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="30" height="30" />
 - CSS3
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" width="30" height="30" />
 - Bootstrap 5.3.8
 
