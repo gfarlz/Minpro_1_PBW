@@ -1,4 +1,6 @@
 # Minpro_1_PBW
+### GHIFARI AL AZHAR
+### 2409116059
 
 # Website Portofolio
 
@@ -10,6 +12,8 @@ Website portofolio sederhana berbasis HTML dan CSS dengan bantuan Bootstrap 5. W
 ## Tampilan Setiap Section
 
 ### 1. Home Section
+<img width="1235" height="869" alt="image" src="https://github.com/user-attachments/assets/1bc1c75f-c882-41d2-a05e-1316f3d86d3f" />
+
 Berisi:
 - Nama
 - Perkenalan singkat
@@ -21,6 +25,8 @@ Home menggunakan Bootstrap untuk layout dan CSS custom untuk styling gradient se
 ---
 
 ### 2. About Me Section
+<img width="1234" height="865" alt="image" src="https://github.com/user-attachments/assets/d946edc8-1c20-4cba-b51e-7a01820c51ba" />
+
 Berisi:
 - Deskripsi diri
 - Pengalaman
@@ -31,10 +37,12 @@ Progress bar dibuat menggunakan komponen Bootstrap dan dimodifikasi dengan CSS u
 ---
 
 ### 3. Certificates Section
+<img width="1233" height="846" alt="image" src="https://github.com/user-attachments/assets/96f7b5b4-e7c6-4a5e-8a54-26325e7c97aa" />
+
 Berisi:
 - Daftar sertifikat dalam bentuk card
 - Layout grid menggunakan Bootstrap (row & col)
-- Gambar sertifikat dengan rasio 16:9
+- Gambar sertifikat 
 
 Card dibuat menggunakan komponen Bootstrap dan disusun responsif menggunakan Grid System.
 
@@ -67,7 +75,3 @@ Menggunakan:
 - CSS3
 - Bootstrap 5.3.8
 
----
-
-## Kesimpulan
-Website portofolio ini dibuat untuk memenuhi tugas praktikum dengan menerapkan struktur HTML yang benar, styling menggunakan CSS, serta memanfaatkan Bootstrap 5 untuk membantu proses layouting dan responsive design.
